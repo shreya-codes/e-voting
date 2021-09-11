@@ -1,0 +1,17 @@
+.main-container{
+    padding: 0;
+    margin: 0;
+    background-color: chocolate;
+    
+}
+h1{
+    font-size: 5em;
+    border: 0.05em  solid #2c698d;
+    padding: 60px;
+    margin: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

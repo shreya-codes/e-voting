@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minor Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/signIn_signUp.css" />
+    <link rel="stylesheet" href="../css/home.css">
+  </head>
+  <body>
+    <header id="top">
+      <nav id="nav">
+          <div class="nav-header">
+            <div class="logo">
+              <a href="home.html"> <img src="../css/logo.png" height="60px" alt=""></a>
+             
+            </div>
+            <!-- <img src="logo.png" class="logo" alt="logo"> -->
+            <div class="links-container">
+              <ul class="links">
+                <li> <a href="home.html"> <h2>Home</h2></a></li>
+                 
+                 
+                  <li> <a href="signIn_signUp.html"><h2>Login</h2></a></li>
+                  <li> <a href="register.html"><h2>Register</h2></a></li>
+              </ul>
+              </div>
+          </div>
+         
+        </nav>
+        </header>
+   <div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="../php/admin_check.php" method='post' id="sign-form" >
+                <h1>Login as admin </h1>
+
+                <label for="First Name"></label>
+                <input id="name" name="firstname" placeholder="FirstName" type="text" required />
+            
+                <label for="Last name"></label>
+                <input id="lastname" name="lastname" placeholder="LastName" type="text" required  />
+
+                <label for="Poll name"></label>
+                <input id="pollname" name="pollname" placeholder="Pollname" type="text" required  />
+  
+                <label for="User_password"></label>
+                <input id="password" name="Upassword" placeholder="User_Password" type="password" required />
+                 <label for="Poll_password"></label>
+                <input id="password" name="Ppassword" placeholder="Poll_Password" type="password" required />
+              
+                <button id="register" name='admin' type='submit' ><h3>Login as admin <h3></button>
+      </form>
+        </div>
+
+       <div class="form-container sign-in-container">
+        <form method='POST' action='../php/loginaction.php' id="sign-form">
+                <div class="login-box">
+                    <h1>Login </h1>
+                    <div class="textbox">
+                        <input type="text" placeholder="Username or firstname" name="firstname" id="firstname" required>
+                    </div>
+        
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" id='password' name='password'required>
+                    </div>
+        
+                  
+                    <button id="login" type='submit' name='logged' ><h3>Login </h3></button>
+                </div>
+            </form>
+
+       </div>
+       <div class="overlay-container">
+           <div class="overlay">
+               <div class="overlay-panel overlay-left">
+                   <h1>Welcome Back! </h1>
+                   <p>To vote please login as a voter</p>
+                   <button class="ghost" id="signIn">
+                      <h3>Login as a voter</h3> 
+                   </button>
+               </div>
+               <div class="overlay-panel overlay-right">
+                <h1> Hello </h1>
+                <p> Login as an admin to get started</p>
+                <button class="ghost" id="signUp">
+                  <h3>Login as an admin</h3>  
+                </button>
+            </div>
+               
+
+           </div>
+
+       </div>
+   </div>
+   <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="about">About</h1>
+          <p class="home-para">
+            PollMaker is a web based application that provides a platform for users to create various types of polls.
+            it helps in capturing powerful feedback instantly 
+          </p>
+          <div class="social">
+            <h1>Contact  Us</h1>
+            <div class="social-links">
+           <a href=""> <i class="fab fa-instagram"></i></a>
+           <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+          </div>
+          </div>
+
+        </div>
+        <div class="footer-section services">
+          <h1>  Our Services</h1>
+        <div class="list">
+          <ul>
+          <li><a href="createpoll.html">Create Poll</a></li>
+          <li><a href="">Vote</a></li>
+          <li><a href="">Share the Link</a></li>
+          <li><a href="">Evaluate Results</a></li>
+        </ul>
+      </div>
+        <div class=" team">
+          <h1>Our  Team</h1>
+          <div class="list">
+          <ul>
+            <li>Rshijuta Pokherel</li>
+            <li>Rupesh Ghorashainee</li>
+            <li>Sailesh Thapa</li>
+            <li>Shreya Shrestha</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+        <div class="footer-section feedback">
+          <h1 class="feed">FeedBack</h1>
+          <form action="home.html" method="post">
+            <input type="email" class="text-input contact-input" placeholder="Your email address" id="email" name="email">
+            <textarea name="message"class="text-input contact-input" placeholder="Your message" id="message" cols="30" rows="10"></textarea>
+            <button class="btn btn-big" id="btn-big">
+              <i class="far fa-envelope"> Send </i>
+            </button>
+
+          </form>
+
+        </div>
+        
+      </div>
+      <div class="footer-bottom">
+        &copy; KECminorproject 
+      </div>
+    </div>
+  </footer>
+    <!-- javascript -->
+    <script src="signIn_signUp.js"></script>
+  </body>
+</html>

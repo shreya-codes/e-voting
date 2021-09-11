@@ -1,0 +1,176 @@
+new poll.php  has pass xyz
+
+homepage....eroor logging in from register 
+
+		
+if(isset($_POST['newpoll'])){
+
+include 'db.php';
+$pollname = mysql_real_escape_string($_POST['pollname']);
+$sql="CREATE TABLE '" .$pollname. "' (  SN INT, voterlist VARCHAR(30),vote_satus BOOLEAN)");
+	$sql->execute();
+	$sql->close();
+}
+
+
+<input type="hidden" name="name" 
+value="<?php echo $_POST['name']; ?>">
+
+
+header('location:vote.php?id='.$id);
+
+
+
+newpoll php....end of file
+
+>>>>current poll session var in poll_entry check php
+>>>>main work.....poll entry check stop storing name every time a poll entry occurs....for both poll name and password entry type
+
+>>>>>notify for registration
+>>>>>>>repeation of regiter on poll_entry check....
+>>>>>need to remove votestatus from admin
+>>>>>>>>>>>poll entry check add timing condition along with ban
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <!DOCTYPE html>
+															<html>
+															<head>
+																<title></title>
+															</head>
+															<body>
+
+																<?php 
+
+																
+																/*$y=$_SESSION['winner'];
+
+
+																	echo($_SESSION['winner']);
+*/
+
+
+																
+
+
+
+
+																?>
+
+
+
+
+
+
+																<table>
+																							<tr>
+																								<td>id</td>
+																								<td>Candidate_name</td>
+																								<td>Image</td>
+																								<td>Result</td>
+																								
+																						</tr>
+
+
+
+
+<?php
+
+
+/*$p=$_SESSION['curr_poll'];
+$q="select * from poll";
+$st=$conn->query($q);
+
+
+
+									while($row=$st->fetch_assoc()){
+
+										$n=$row['Poll_Name'];
+
+
+
+														if($n==$p){
+																		
+															echo "<tr ><td >".$row["id"]."</td><td>".$row['c1']."</td><td>".$row['c1_image']."</td> </tr>"; 
+														
+														
+																echo "<tr ><td >".$row["id"]."</td><td>".$row['c2']."</td><td>".$row['c2_image']."</td> </tr>"; 
+
+																echo "<tr ><td >".$row["id"]."</td><td>".$row['c3']."</td><td>".$row['c3_image']."</td> </tr>"; 
+
+																echo "<tr ><td >".$row["id"]."</td><td>".$row['c4']."</td><td>".$row['c4_image']."</td> </tr>"; 
+																echo "<tr ><td >".$row["id"]."</td><td>".$row['c5']."</td><td>".$row['c5_image']."</td> </tr>"; 
+														
+														
+														*/
+														
+															
+
+
+
+
+															
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+														
+
+
+
+
+														}
+
+									}
+
+
+
+
+
+ ?>
+
+ </table>
+															
+															</body>
+															</html>
+ -->

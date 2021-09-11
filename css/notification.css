@@ -1,0 +1,60 @@
+.reg_icon{
+    height: 50%;
+    width: 629px;
+}
+
+.reg_icon i
+{
+    font-size: 150PX;
+    margin: 50px 235px ;
+    justify-content: center;
+    align-items: center;
+}
+.fa-check-circle{
+    color: #2c698d;
+}
+.fa-exclamation-circle{
+    color: red;
+
+}
+.fa-hourglass-end , .fa-hourglass-start{
+    color: #2c698d;
+}
+ #alert{
+    color: crimson;
+    font-size: 20px;
+    padding: 50px 180px;
+    font-weight: 600;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message{
+    font-size: 20px;
+    padding: 50px 85px;
+    font-weight: 600;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #2c698d;
+}
+.deadline{
+    color: #2c698d;
+    font-size: 20px;
+    padding: 50px 85px;
+    font-weight: 600;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.form-container{
+    background: rgb(255, 253, 253);
+}

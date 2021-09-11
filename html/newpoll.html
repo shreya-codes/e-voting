@@ -1,0 +1,103 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/createpoll.css">
+      <link rel="stylesheet" href="../css/newpoll.css">
+</head>
+<body>
+  <header id="top">
+   
+      </header>
+  
+    <div class="createpoll-container">
+        <section class="section-center">
+            <form action='../php/newpoll.php' method='post' id="createpoll-form" enctype="multipart/form-data">
+                <p class="alert" id="alert">
+                  <div>
+      <label id="form-label" > Create a new Poll</label><br><br>
+                <label id="form-label"> PollName</label><br>
+                <input id='name' type=required name='pollname'><br>
+                
+                <label id="form-label"> Total entries</label><br>
+                <input id='counted' type=number  min="2" max="5" name='entry-count'><br>
+                
+                 <label id="form-label">Poll type</label><br>
+                 <form action="" id="a">
+                 <div id="poll-type">
+                 <p><input type='radio' id="r1" name='voter' value='Free'>Free</p>
+                  <p><input type='radio' id="r2" name='voter' value='Controlled'>Controlled</p>
+                  <p><input type='radio' id="r3" name='voter' value='FullControlled'> FullControlled</p>
+                 </div>
+                 <label id="form-label">Password For Poll Entry:</label>
+<input id='pass'  type=text name='poll_pass' required><br>
+
+
+<label for="RegDeadlinetime" id="form-label">Registration Deadline</label>
+<input type="datetime-local" id="RegDeadtime" name="regdead" type="required">
+
+<br>
+<label for="Pollstarttime" id="form-label">Poll start</label>
+<input type="datetime-local" id="Pollstarttime" name="pollstart" type="required">
+
+<br>
+
+
+<label for="Pollfinishtime" id="form-label">Poll Deadline</label>
+<input type="datetime-local" id="Pollfinishtime" name="pollend" type="required">
+
+<br>
+
+<label id="form-label">Image1</label>
+<input type="file" name='upload1'>
+<label id="form-label">candidate1:</label>
+<input id='candidate'  type=text name='candidate1' required><br>
+
+
+
+<label id="form-label">Image2</label>
+<input type="file" name='upload2'>
+<label id="form-label">candidate2:</label>
+<input id='candidate'  type=text name='candidate2' required><br>
+
+<label id="form-label">Image3</label>
+<input type="file" name='upload3'>
+<label id="form-label">candidate3:</label>
+<input id='candidate'  type=text name='candidate3'><br>
+
+
+<label id="form-label">Image4</label>
+<input type="file" name='upload4'>
+<label id="form-label">candidate4:</label>
+<input id='candidate'  type=text name='candidate4'><br>
+
+
+<label id="form-label">Image5</label>
+<input type="file" name='upload5'>
+<label id="form-label">candidate5:</label>
+<input id='candidate'  type=text name='candidate5'><br>
+
+ <button type="submit" name='newpoll' class="submit-btn">ADD</button>
+
+                </form>
+                               </div> </p>
+        </form>
+        
+        <div class="created-container">
+          <h1> Created Polls</h1>
+            <div class="poll-list">
+              <article class="title">
+               
+    </div>
+              </article>
+            </div>
+            </div>
+    </section>
+    </div>
+   
+    <script src="createpoll.js"></script>
+</body>
+</html
